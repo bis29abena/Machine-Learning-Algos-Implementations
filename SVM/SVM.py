@@ -1,8 +1,8 @@
- # Imports
-from sklearn import datasets
-from SVM_test import SVM
+# Imports
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn import datasets
+from SVM_test import SVM
 
 X, y = datasets.make_blobs(
     n_samples=50, n_features=2, centers=2, cluster_std=1.05, random_state=40
@@ -14,6 +14,7 @@ clf.fit(X, y)
 # predictions = clf.predict(X)
 
 print(clf.w, clf.b)
+
 
 def visualize_svm():
     def get_hyperplane_value(x, w, b, offset):
@@ -44,5 +45,6 @@ def visualize_svm():
     ax.set_ylim([x1_min - 3, x1_max + 3])
 
     plt.show()
+
 
 visualize_svm()
