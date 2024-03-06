@@ -28,6 +28,6 @@ plt.plot(X_test, pred, color="blue", linewidth=3)
 plt.show()
 
 # show a plot of the data
-# plt.figure()
-# plt.scatter(X[:, 0], y, s=30, marker="o", edgecolors="b")
-# plt.show()
+plt.figure()
+plt.scatter(X[:, 0], y, s=30, marker="o", edgecolors="b")
+plt.show()
